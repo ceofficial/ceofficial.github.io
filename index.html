@@ -78,12 +78,12 @@ if (comp==6) temp="F";if (comp==7) temp="G";if (comp==8) temp="H";if (comp==9) t
 checkSpace();}
 document.images[temp].src= o;
 process();}
-//function ended() {alert("Для начала новой игры нажмите кнопку.")}
+function ended() {alert("Для начала новой игры нажмите кнопку.")}
 function process() {
 logicOne();
-//if (all==1){ alert("Вы выиграли! Поздравляем!"); wn++; }
-//if (all==2){ alert("Вы проиграли."); ls++; }
-//if (all==3){ alert("Мы сыграли вничью."); ts++; }
+if (all==1){ alert("Вы выиграли! Поздравляем!"); wn++; }
+if (all==2){ alert("Вы проиграли."); ls++; }
+if (all==3){ alert("Мы сыграли вничью."); ts++; }
 if (all!=0) {
 document.game.you.value = wn;
 document.game.computer.value = ls;
